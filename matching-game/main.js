@@ -6,6 +6,8 @@ import '../src/styles/elements/base.css'
 import GameArea from '../src/components/GameArea'
 import PlayerName from '../src/components/PlayerName'
 import TurnCard from '../src/components/TurnCard'
+import ScoreBoard from '../src/components/ScoreBoard'
+
 
 
 const $root = document.querySelector('#root');
@@ -13,9 +15,7 @@ const $root = document.querySelector('#root');
 $root.insertAdjacentHTML(
     "beforeend",
     `
-    ${PlayerName('Player 1')}
-    ${PlayerName('Player 2')}
-
+    ${ScoreBoard()}
     ${GameArea(6)}
     `
 );
