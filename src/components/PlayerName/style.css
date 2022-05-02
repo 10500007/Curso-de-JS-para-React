@@ -1,0 +1,14 @@
+/* h1{
+    
+    display: inline-block;
+    width: 150px;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--color-floral-white);
+    margin-top: 10px;
+    
+} */
+
+h1{
+    font-size: 0.7rem;
+}

@@ -1,0 +1,39 @@
+.game-area{
+    
+    width: 300px;
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: 8, 1fr;
+    grid-template-rows: 6, 1fr; */
+    grid-template-areas: "n1 n2"
+                         "n3 n4"
+                         "n5 n6"
+    ;
+    margin: auto; 
+    gap: 20px;
+   
+    margin-top: 10px;
+}
+
+ article:nth-child(1){
+     grid-area: n1;
+ }
+
+ article:nth-child(2){
+    grid-area: n2;
+}
+
+article:nth-child(3){
+    grid-area: n3;
+}
+
+article:nth-child(4){
+    grid-area: n4;
+}
+
+article:nth-child(5){
+    grid-area: n5;
+}
+article:nth-child(6){
+    grid-area: n6;
+}

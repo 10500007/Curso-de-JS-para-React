@@ -1,14 +1,18 @@
+
+
 import '../CardGame/style.css';
 
 
 //JSX
 function CardGame(){
-    return `
+    return `   
         <article class="card-game">        
-        <img src="/images/alura-pixel.png" alt="ee">
+        <img src="/images/alura-pixel.png" alt="ee">        
         </article>
     `;
 
+   
+    
 }
 
 //Serve para exportar a função
