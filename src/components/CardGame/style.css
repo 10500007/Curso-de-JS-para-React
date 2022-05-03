@@ -1,7 +1,8 @@
 .card-game{
+    box-sizing: border-box;
     display: flex;
     background-color: var(--color-alura);
-    width: 130px;
+    width: 135px;
     height: 160px;
     justify-content: center;
     align-items: center;
@@ -9,7 +10,5 @@
 
     
 }
-
-
 
 

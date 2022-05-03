@@ -3,10 +3,13 @@ import './style.css'
 import '../src/styles/settings/colors.css'
 import CardGame from '../src/components/CardGame'
 import '../src/styles/elements/base.css'
-import GameArea from '../src/components/GameArea'
+import GameArea from '../src/components/BoardGame'
 import PlayerName from '../src/components/PlayerName'
-import TurnCard from '../src/components/TurnCard'
 import ScoreBoard from '../src/components/ScoreBoard'
+import CardFrontBack from '../src/components/CardFrontBack'
+import BoardGame from '../src/components/BoardGame'
+
+
 
 
 
@@ -16,9 +19,11 @@ $root.insertAdjacentHTML(
     "beforeend",
     `
     ${ScoreBoard()}
-    ${GameArea(6)}
+    ${BoardGame(4)} 
+   
     `
 );
 
 
-
+/* ${CardFrontBack(2)} */
+/*  ${GameArea(2)} */

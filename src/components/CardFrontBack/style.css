@@ -1,0 +1,33 @@
+.card-front-back{
+    box-sizing: border-box;
+    position: relative;  
+    transform-style: preserve-3d;
+    
+    
+    
+    height: 160px;
+    width: 135px;
+   
+}   
+
+.front, .back{
+    position: absolute;    
+    
+}
+.back{
+/*     backface -visibilidade = hidden = escondida*/
+    backface-visibility: hidden;    
+    transform: rotateY(180deg);
+    
+}
+
+.active{
+    transform: rotateY(180deg);
+    transition: transform 400ms ease-in-out;
+    /* background: var(--color-fiery-rose); */
+    
+}
+
+.back .card-game{
+    background: var(--color-fiery-rose)
+}
