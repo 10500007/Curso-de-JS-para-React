@@ -1,0 +1,18 @@
+-------PlayerName-------------
+import '../PlayerName/style.css'
+import PlayerPoints from '../PlayerPoints';
+
+function PlayerName(n1){
+    if(n1== '1'){
+        
+    }
+
+    return/*html*/ `
+    <h1>${n1}</h1>
+  
+    ${PlayerPoints()}
+    `
+}
+
+export default PlayerName;
+-------PlayerName-------------
