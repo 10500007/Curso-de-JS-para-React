@@ -1,0 +1,16 @@
+canvas{
+ border: 1px solid black;
+   
+}
+
+ul{
+    display: flex;
+    width: 50px;
+    border: 1px solid black;
+}
+
+ul li{
+    width: 33px;
+    border: 1px solid red;
+    text-indent: -999px;
+}

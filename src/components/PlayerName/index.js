@@ -1,5 +1,6 @@
 import '../PlayerName/style.css'
-import PlayerPoints from '../PlayerPoints';
+import PlayerScore from '../PlayerScore';
+
 
 function PlayerName(n1){
 
@@ -7,13 +8,13 @@ function PlayerName(n1){
         return/*html*/ `
         <h1>${n1}</h1>
       
-        ${PlayerPoints('1')}
+        ${PlayerScore('1')}
         `
     }else{
         return/*html*/ `
         <h1>${n1}</h1>
       
-        ${PlayerPoints('2')}
+        ${PlayerScore('2')}
         `    }
     }
 
