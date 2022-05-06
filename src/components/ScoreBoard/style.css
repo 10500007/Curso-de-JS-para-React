@@ -6,3 +6,8 @@ header{
     justify-content: space-evenly;
 
 }
+
+.vs-player{
+    font-size: 0.6rem;
+    color: var(--color-sandstorm);
+}

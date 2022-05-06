@@ -1,10 +1,13 @@
 import '../PlayerScore/style.css'
 
 
-function PlayerScore(points){
-    if(points =='1'){
+function PlayerScore(n=0, points=0){
+   
+  
+
+    if(n =='p1'){
         return/*html*/`
-        <ul class="p1">
+        <ul class="${n}" data_points=${points}>
             <li>1</li>
             <li>2</li>
             <li>3</li>
@@ -12,14 +15,15 @@ function PlayerScore(points){
         `
     }else{
         return/*html*/`
-        <ul class="p2">
+        <ul class="${n}" data_points=${points}>
             <li>1</li>
             <li>2</li>
             <li>3</li>
         </ul>
         `
+        
     }
-   
+    
 }
 
 export default PlayerScore;

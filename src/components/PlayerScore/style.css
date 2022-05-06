@@ -6,11 +6,13 @@ canvas{
 ul{
     display: flex;
     width: 50px;
-    border: 1px solid black;
+    border: 2px solid var(--color-fiery-rose);
+    
 }
 
 ul li{
     width: 33px;
-    border: 1px solid red;
-    text-indent: -999px;
+    border: 0.5px solid rgb(255, 255, 255);
+    text-indent: -9999px;
+    background-color: var(--color-old-silver);
 }

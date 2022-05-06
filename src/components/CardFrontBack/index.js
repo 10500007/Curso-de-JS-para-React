@@ -12,6 +12,8 @@ function CardFrontBack(){
        
 
             window.cardfrontback.handleclick = (event) =>{
+
+                console.log(event)
      
                 const $origin =  event.target.closest('.card-front-back')
                
