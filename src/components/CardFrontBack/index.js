@@ -3,7 +3,7 @@ import '../CardFrontBack/style.css';
 
 
 
-function CardFrontBack(){
+function CardFrontBack(icon, altIcon){
 
     
     window.cardfrontback = {}
@@ -13,7 +13,7 @@ function CardFrontBack(){
 
             window.cardfrontback.handleclick = (event) =>{
 
-                console.log(event)
+                
      
                 const $origin =  event.target.closest('.card-front-back')
                
@@ -33,7 +33,7 @@ function CardFrontBack(){
                     if(i%2!==0){
                         const $remover1 = $origin.offsetParent.childNodes[i].classList.remove('active')   
                     }
-                      console.log('par')                   
+                                       
                 }  
                 arrau.splice(0,2) 
 
@@ -41,19 +41,14 @@ function CardFrontBack(){
 
     } 
 
-   /*   window.cardfrontback.handleclick = function teste(event){
-        const $origin =  event.target.closest('.card-front-back')
-        const $virarcarta = $origin.classList.toggle('active')
-        console.log('outro test')
-    }  */
-
+ 
     return /*html*/`
     <article class="card-front-back" onclick="cardfrontback.handleclick(event)">   
         <div class="front">
         ${CardGame()}
         </div>        
         <div class="back">
-        ${CardGame('javascript','logo do java')}
+        ${CardGame(icon, altIcon)}
         </div>       
     </article>
     `

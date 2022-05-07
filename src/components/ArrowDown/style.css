@@ -1,0 +1,12 @@
+.arrow-down{
+    box-sizing: border-box;
+    position:absolute;
+    top: 5px;
+    transition: transform 400ms ease-in-out;
+    transform: translateX(-49px);
+   
+}
+
+.arrow-down[data-currentPlayer='2']{
+    transform: translateX(+49px)
+}

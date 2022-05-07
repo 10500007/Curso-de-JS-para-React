@@ -3,11 +3,11 @@ import '../CardGame/style.css';
 
 //JSX
 function CardGame(icon='alura-pixel', alt='logo do alura'){
-    return `   
+    return /*html*/`   
         <article class="card-game">        
         <img src="/images/${icon}.png" alt="${alt}">        
         </article>
-    `;   
+    `
     
 }
 
