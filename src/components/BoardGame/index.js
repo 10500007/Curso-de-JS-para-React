@@ -13,16 +13,19 @@ function BoardGame(amountCards){
                        {icon:"css" , altIcon:"Logo do CSS"}  
     ];
 
- 
+  /*   window.boardgame = {}
+
+    window.boardgame.handleclick = (event) =>{
+        const $origin =  event.target.closest('.card-front-back')
         
-         
-     /*     const $htmlCardFrontBack = CardFrontBack(card[0].icon, card[0].altIcon); */
-            
-         /*    const $teste = card.map(function perc(elem1, elem2){
-                return  CardFrontBack(elem1.icon, elem2.altIcon);
-            }); */
-           
-            const Map_cardList = cardsList.map((elemen1) => CardFrontBack(elemen1.icon))
+        const valor = document.querySelectorAll('.card-front-back')
+        
+        console.log(valor)
+       
+    } */
+
+    
+            const Map_cardList = cardsList.map((elemen1) => CardFrontBack(elemen1.icon, elemen1.altIcon))
 
             //Transformando a lista em apenas string, serve para tirar a virgula
             const $htmlCards = Map_cardList.join('')
@@ -32,13 +35,6 @@ function BoardGame(amountCards){
             </section>   
             `
 
-   /*  const $htmlCardFrontBack = CardFrontBack(card[2].icon, card[2].altIcon); */
-   /*  const $htmlContent = $htmlCardFrontBack.repeat(amountCards) */
-
-  
-   
 }
 
 export default BoardGame;
-
- /* ${CardGame('alura-pixel').repeat(cartoes)}   */    

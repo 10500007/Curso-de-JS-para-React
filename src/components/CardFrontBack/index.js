@@ -1,47 +1,48 @@
 import CardGame from "../CardGame";
 import '../CardFrontBack/style.css';
+import ArrowDown from "../ArrowDown";
+
 
 
 
 function CardFrontBack(icon, altIcon){
 
-    
+   
     window.cardfrontback = {}
-         var arrau = [];
-
        
-
-            window.cardfrontback.handleclick = (event) =>{
-
+            window.cardfrontback.handleclick = (event) =>{   
                 
      
                 const $origin =  event.target.closest('.card-front-back')
-               
-               if(arrau.length < 2){
-                const $virarcarta = $origin.classList.toggle('active')
+                const $virarcarta = $origin.classList.toggle('active')  
                 
-                var teste = String($virarcarta) 
-        
-                arrau.push(teste)  
-        
-               }else{
+                const class_active = document.querySelectorAll('.active')
+
+                const arrow = document.querySelector('.arrow-down')
+                console.log(arrow)
+
+                if(class_active.length == 2){
+
  
-                const tam = $origin.offsetParent.childNodes.length    
-
-                 for(var i = 1;tam>i;i++){
-                    
-                    if(i%2!==0){
-                        const $remover1 = $origin.offsetParent.childNodes[i].classList.remove('active')   
-                    }
-                                       
-                }  
-                arrau.splice(0,2) 
-
+                    setTimeout(function(){       
+                     //Pegando valor de dentro do data-current   
+                     const currentPlayer = arrow.getAttribute('data-currentplayer')
+                     //setando valor de atributo utilizando o ternario, se valor for 1 ele muda pra 2, se for 2 muda pra 1
+                     arrow.setAttribute('data-currentplayer',currentPlayer == 1?2:1)                 
+                     class_active.forEach(function(nome){
+                     const remov_all_act = nome.classList.remove('active')
+                          
+                        })                   
+                    },1000)
+                   
+                                    
+                }else if(class_active.length >2){
+                    return class_active.forEach((rem)=>{
+                        rem.classList.remove('active')
+                    })                    
+                }           
                }
 
-    } 
-
- 
     return /*html*/`
     <article class="card-front-back" onclick="cardfrontback.handleclick(event)">   
         <div class="front">
